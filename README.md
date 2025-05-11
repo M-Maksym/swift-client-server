@@ -42,9 +42,11 @@ nc -zv 127.0.0.1 8080
 
 ### Troubleshooting
 
-**Connection refused**: Ensure server is running before starting client
-**No response**: Verify firewall isn't blocking the port
-**Invalid data**: Use comma-separated values (width,height)
+**- Connection refused**: Ensure server is running before starting client
+
+**- No response**: Verify firewall isn't blocking the port
+
+**- Invalid data**: Use comma-separated values (width,height)
 
 
 <img width="901" alt="Screenshot 2025-05-11 at 16 02 19" src="https://github.com/user-attachments/assets/620db3b1-a8e7-4062-b2d8-b410007a5422" />
