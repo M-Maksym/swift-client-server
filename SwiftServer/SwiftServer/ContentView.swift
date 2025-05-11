@@ -127,7 +127,6 @@ class MathServer: ObservableObject {
                     self.logs.append(">>> Thread \(index + 1): Start")
                 }
                 
-                // Імітація обчислень
                 Thread.sleep(forTimeInterval: 2)
                 
                 DispatchQueue.main.async {
@@ -203,7 +202,6 @@ struct RectangleView: View {
 struct ContentView: View {
     @StateObject var server = MathServer()
     
-    // Кольори для прямокутників
     let colors: [Color] = [.blue, .green, .orange, .purple]
     
     var body: some View {
@@ -229,7 +227,6 @@ struct ContentView: View {
                 .font(.title3)
                 .padding()
             
-            // Візуалізація прямокутників
             if !server.rectangles.isEmpty {
                 Text("Rectangle visualization:")
                     .font(.title3)
